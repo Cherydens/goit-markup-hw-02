@@ -111,21 +111,21 @@ border-radius: 4px;
 
 /* Features */
 
-.feature-list .title {
+.features-list .title {
     color: var(--title-text-color);
 }
 
-/* Comand */
+/* Command */
 
-.comand {
+.command {
     background-color: var(--secondary-bcg-color);
 }
 
-.comand-list {
+.command-list .list-item {
     background-color: var(--primary-bcg-color);
 }
 
-.comand-list .title {
+.command-list .title {
     
     color: var(--title-text-color);
 }
@@ -166,11 +166,11 @@ border-radius: 4px;
 
 /* Projects */
 
-.projects li {
+.projects-list .list-item {
     background: var(--primary-bcg-color);
     border: 1px solid var(--border-color);
 }
 
-.projects .title {
+.projects-list .title {
     color: var(--title-text-color);
 }
