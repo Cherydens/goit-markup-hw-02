@@ -1,0 +1,116 @@
+:root {
+  /* Iris */
+  --primary-brand: #4d5ae5;
+  /* Navy blue */
+  --dark: #2e2f42;
+  /* GREEN */
+  --success: #31d0aa;
+  /* SLATE */
+  --text: #434455;
+  /* LIGHT SLATE */
+  --subtle-text: #8e8f99;
+  /* cornflower */
+  --accent: #e7e9fc;
+  /* CLOUD */
+  --light: #f4f4fd;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  
+  color: var(--text);
+  background-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+
+/* Logo */
+.logo,
+.logo-accent {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  color: var(--primary-brand);
+}
+
+.page-header .logo {
+  color: var(--dark);
+}
+
+.page-footer .logo {
+  color: var(--light);
+}
+
+/* Menu */
+.menu-link {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--text);
+}
+
+.menu-link:active {
+  color: var(--primary-brand);
+}
+
+/* Contacts */
+.contacts .link {
+  color: var(--text);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--primary-brand);
+}
+
+/* Hero */
+.hero {
+    background-color: var(--dark);
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+/* Modal-Btn */
+.modal-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+/* Footer */
+.page-footer {
+  background-color: var(--dark);
+}
