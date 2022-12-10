@@ -1,18 +1,11 @@
 :root {
-  /* Iris */
-  --primary-brand: #4d5ae5;
-  /* Navy blue */
-  --dark: #2e2f42;
-  /* GREEN */
-  --success: #31d0aa;
-  /* SLATE */
-  --text: #434455;
-  /* LIGHT SLATE */
-  --subtle-text: #8e8f99;
-  /* cornflower */
-  --accent: #e7e9fc;
-  /* CLOUD */
-  --light: #f4f4fd;
+  --primary-brand-color: #4D5AE5;
+  --dark-color: #2E2F42;
+  --text-color: #434455;
+  --subtle-text-color: #8E8F99;
+  --accent-color: #E7E9FC;
+  --light-color: #F4F4FD;
+  --white-color: #FFFFFF;
 }
 
 body {
@@ -21,9 +14,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
-  color: var(--text);
-  background-color: #ffffff;
 }
 
 .list {
@@ -34,16 +24,8 @@ body {
   text-decoration: none;
 }
 
-.title {
-  font-weight: 600;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--dark);
-}
-
-/* Logo */
-.logo,
-.logo-accent {
+/* ===== COMPONENTS ===== */
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -53,64 +35,119 @@ body {
 }
 
 .logo-accent {
-  color: var(--primary-brand);
+  color: var(--primary-brand-color);
 }
 
-.page-header .logo {
-  color: var(--dark);
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
 }
 
-.page-footer .logo {
-  color: var(--light);
+.subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
 }
 
-/* Menu */
+.light-theme-text {
+  color: var(--text-color);
+}
+
+.dark-theme-text {
+  color: var(--accent-color);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/* ===== HEADER ===== */
+.light-theme-logo {
+  color: var(--dark-color);
+}
+
 .menu-link {
   font-weight: 600;
-  color: var(--dark);
+  color: var(--dark-color);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--text);
+  color:var(--text-color);
 }
 
-.menu-link:active {
-  color: var(--primary-brand);
+.menu-link:active,
+.current {
+  color: var(--primary-brand-color);
 }
 
-/* Contacts */
-.contacts .link {
-  color: var(--text);
+.contacts-link {
+  color:var(--text-color);
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--primary-brand);
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--primary-brand-color);
 }
 
-/* Hero */
+/* ===== HERO ===== */
 .hero {
-    background-color: var(--dark);
+  background: var(--dark-color);
 }
 
 .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    
-    color: #FFFFFF;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--white-color);
 }
 
-/* Modal-Btn */
 .modal-btn {
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
+  color: var(--white-color);
+  background: var(--primary-brand-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ 
 }
-/* Footer */
+.modal-btn:hover,
+.modal-btn:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.modal-btn:active {
+  background: #404BBF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== TEAM ===== */
+.team {
+  background: var(--light-color);
+}
+
+.team-subtitle,
+.team-text {
+  text-align: center;
+}
+
+.team-list-item {
+  background: var(--white-color);
+}
+
+/* ===== FOOTER ===== */
 .page-footer {
-  background-color: var(--dark);
+  background: var(--dark-color);
+}
+.dark-theme-logo {
+  color: var(--light-color);
 }
